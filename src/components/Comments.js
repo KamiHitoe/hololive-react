@@ -29,7 +29,7 @@ export default class Comments extends React.Component {
         <textarea onChange={this.handleChange.bind(this)} rows={5} cols={30}></textarea>
         <br />
         <button onClick={this.handleClick.bind(this)}>push message</button>
-        <ol style={{margin: "0 auto"}}>
+        <ol style={{maxWidth: "30%", margin: "30px auto"}}>
           {this.state.messages.map((e,i) => 
             <li key={i}>{e}</li>
           )}
