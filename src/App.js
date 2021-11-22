@@ -12,7 +12,7 @@ const characterList = [
 function App() {
   return (
     <div className="App">
-      <h1 style={{color: "purple"}}>Which girl do you think hot?!</h1>
+      <h1 style={{color: "#28c6fb"}}>Which girl do you think hot?!</h1>
       <section style={{
         display: "flex",
         flexWrap: "wrap",
@@ -24,6 +24,7 @@ function App() {
           <Character key={i} name={e.name} path={e.path} />
         )}
       </section>
+      <h2>VS</h2>
       <section>
         <Comments />
       </section>
