@@ -1,14 +1,6 @@
 import Character from "./components/Character";
 import Comments from "./components/Comments";
 
-import coco from './assets/image/react-sample01.png';
-import gura from './assets/image/react-sample02.png';
-
-const characterList = [
-  {name: "Coco Kiryu", path: coco},
-  {name: "Gura Gawr", path: gura},
-]
-
 function App() {
   return (
     <div className="App">
@@ -19,11 +11,9 @@ function App() {
         justifyContent: "space-between",
         padding: "0 50px",
         }}>
-        {
-          characterList.map((e,i) => 
-          <Character key={i} name={e.name} path={e.path} />
-        )}
       </section>
+
+      <img src={require("./assets/image/TokinoSora.png").default} alt='hoge' />
       <h2>VS</h2>
       <section>
         <Comments />
